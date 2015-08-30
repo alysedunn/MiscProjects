@@ -61,8 +61,9 @@ class Resume
 
 	def Print_printing_instructions
 		puts
-		print "Would you like to print the resume that you selected? "
-		print "Enter 'yes' or 'no'. Entering 'no' will exit the program." 
+		print "Would you like to create a file with the" 
+		print "resume that you selected? Enter 'yes' or 'no'." 
+		print "Entering 'no' will exit the program."
 	end
 
 	def Update_user_input_2
@@ -70,15 +71,20 @@ class Resume
 	end
 
 	def Input_2_validation_loop
-		puts @user_input_2
 		if @user_input_2 == "yes" 
-			PM_resume()
+			puts "yes"
 		elsif @user_input_2 == "no"
-			Dev_resume()
+			puts "Exiting program"
 		else
 			puts "You entered an invalid value."
+			@user_input_2 = nil
+			Print_printing_instructions()
+			Update_user_input_2()
+			Input_2_validation_loop()
 		end
 	end
+
+	def Create_file
 
 end
 
@@ -91,5 +97,6 @@ Resume_Instance = Resume.new
 	Resume_Instance.Print_printing_instructions()
 	Resume_Instance.Update_user_input_2()
 	Resume_Instance.Input_2_validation_loop()
+	Resume_Instance.Create_file()
 
 # end
