@@ -43,16 +43,20 @@ class Resume
 				end
 			end
 		end
-
 	end
 
 	def Dev_resume
 		puts "You selected the"+" "+ @@Dev_Resume
-		File.open($MyResume, "r") do |f|
-  		f.each_line do |line|
-    		puts line
-    		end
-    	end
+		json1 = File.read($MyResume)
+		obj = JSON.parse(json1)
+
+		obj.each do |key, value|
+			value.each do |subkey_key, subkey_value|
+				if subkey_key.include?('Dev')
+					puts subkey_value
+	    		end
+	    	end
+		end
 	end
 
 end
