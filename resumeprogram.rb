@@ -36,12 +36,12 @@ class Resume
 		puts "You selected the"+" "+ @@PM_Resume
 		json1 = File.read($MyResume)
 		obj = JSON.parse(json1)
-
+		@PM_Resume_Just_Created = ""
 		obj.each do |key, value|
 			value.each do |pm_subkey_key, pm_subkey_value|
 				if pm_subkey_key.include?('PM')
 					puts pm_subkey_value
-					# pm_subkey_value = @PM_Resume_Just_Created
+					@PM_Resume_Just_Created += pm_subkey_value + "\n"
 				end
 			end
 		end
@@ -51,12 +51,12 @@ class Resume
 		puts "You selected the"+" "+ @@Dev_Resume
 		json1 = File.read($MyResume)
 		obj = JSON.parse(json1)
-
+		@Dev_Resume_Just_Created = ""
 		obj.each do |key, value|
 			value.each do |dev_subkey_key, dev_subkey_value|
 				if dev_subkey_key.include?('Dev')
 					puts dev_subkey_value
-					# dev_subkey_value = @Dev_Resume_Just_Created
+					@Dev_Resume_Just_Created += dev_subkey_value + "\n"
 	    		end
 	    	end
 		end
@@ -90,16 +90,17 @@ class Resume
 	def Create_file
 		if @user_input_1 == "1"
 			File.new "Alyse Dunn_ProjectManager.txt","w"
-			File.open("Alyse Dunn_ProjectManager.txt", 'w') { |file| file.write("test") }
-			end
+			File.open("Alyse Dunn_ProjectManager.txt", 'w') { |file| file.write(@PM_Resume_Just_Created) }
 			puts "PM Resume Created"
 		else
 			File.new "Alyse Dunn_Developer.txt","w"
 			File.open("Alyse Dunn_Developer.txt", 'w') { |file| file.write("test") }
 			puts "Dev Resume Created"
+
 		end
 	end
 
+end
 
 Resume_Instance = Resume.new
 

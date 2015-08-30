@@ -1,0 +1,3 @@
+Lead front-end and back-end teams using agile methodologies. Orchestrated sprint planning meetings, retrospective meetings, daily scrums, and end of sprint demos. Used velocity and burndown charts to help measure team success.
+University of Michigan, Ann Arbor, MI
+Python, HTML, CSS, Javascript, Ruby, Jira, Confluence, Git, GitHub
