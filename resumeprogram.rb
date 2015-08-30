@@ -9,6 +9,7 @@ class Resume
 
 @@PM_Resume = "Project Management Resume"
 @@Dev_Resume = "Development Resume"
+@@Exit_message = "Exiting Program"
 
 	def Print_instructions 
 		puts
@@ -37,9 +38,10 @@ class Resume
 		obj = JSON.parse(json1)
 
 		obj.each do |key, value|
-			value.each do |subkey_key, subkey_value|
-				if subkey_key.include?('PM')
-					puts subkey_value
+			value.each do |pm_subkey_key, pm_subkey_value|
+				if pm_subkey_key.include?('PM')
+					puts pm_subkey_value
+					# pm_subkey_value = @PM_Resume_Just_Created
 				end
 			end
 		end
@@ -51,16 +53,16 @@ class Resume
 		obj = JSON.parse(json1)
 
 		obj.each do |key, value|
-			value.each do |subkey_key, subkey_value|
-				if subkey_key.include?('Dev')
-					puts subkey_value
+			value.each do |dev_subkey_key, dev_subkey_value|
+				if dev_subkey_key.include?('Dev')
+					puts dev_subkey_value
+					# dev_subkey_value = @Dev_Resume_Just_Created
 	    		end
 	    	end
 		end
 	end
 
 	def Print_printing_instructions
-		puts
 		print "Would you like to create a file with the" 
 		print "resume that you selected? Enter 'yes' or 'no'." 
 		print "Entering 'no' will exit the program."
@@ -73,8 +75,9 @@ class Resume
 	def Input_2_validation_loop
 		if @user_input_2 == "yes" 
 			puts "yes"
+			Create_file()
 		elsif @user_input_2 == "no"
-			puts "Exiting program"
+			puts @@Exit_message
 		else
 			puts "You entered an invalid value."
 			@user_input_2 = nil
@@ -85,8 +88,18 @@ class Resume
 	end
 
 	def Create_file
+		if @user_input_1 == "1"
+			File.new "Alyse Dunn_ProjectManager.txt","w"
+			File.open("Alyse Dunn_ProjectManager.txt", 'w') { |file| file.write("test") }
+			end
+			puts "PM Resume Created"
+		else
+			File.new "Alyse Dunn_Developer.txt","w"
+			File.open("Alyse Dunn_Developer.txt", 'w') { |file| file.write("test") }
+			puts "Dev Resume Created"
+		end
+	end
 
-end
 
 Resume_Instance = Resume.new
 
@@ -97,6 +110,5 @@ Resume_Instance = Resume.new
 	Resume_Instance.Print_printing_instructions()
 	Resume_Instance.Update_user_input_2()
 	Resume_Instance.Input_2_validation_loop()
-	Resume_Instance.Create_file()
 
 # end
