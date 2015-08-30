@@ -17,14 +17,14 @@ class Resume
 		puts "2." + " " + @@Dev_Resume
 	end
 
-	def Update_user_input
-		@user_input = STDIN.gets.chomp
+	def Update_user_input_1
+		@user_input_1 = STDIN.gets.chomp
 	end
 
-	def Validation_loop
-		if @user_input == "1" 
+	def Input_1_validation_loop
+		if @user_input_1 == "1" 
 			PM_resume()
-		elsif @user_input == "2"
+		elsif @user_input_1 == "2"
 			Dev_resume()
 		else
 			puts "You entered an invalid value."
@@ -59,13 +59,37 @@ class Resume
 		end
 	end
 
+	def Print_printing_instructions
+		puts
+		print "Would you like to print the resume that you selected? "
+		print "Enter 'yes' or 'no'. Entering 'no' will exit the program." 
+	end
+
+	def Update_user_input_2
+		@user_input_2 = STDIN.gets.chomp.downcase
+	end
+
+	def Input_2_validation_loop
+		puts @user_input_2
+		if @user_input_2 == "yes" 
+			PM_resume()
+		elsif @user_input_2 == "no"
+			Dev_resume()
+		else
+			puts "You entered an invalid value."
+		end
+	end
+
 end
 
 Resume_Instance = Resume.new
 
 # while true
 	Resume_Instance.Print_instructions()
-	Resume_Instance.Update_user_input()
-	Resume_Instance.Validation_loop()
+	Resume_Instance.Update_user_input_1()
+	Resume_Instance.Input_1_validation_loop()
+	Resume_Instance.Print_printing_instructions()
+	Resume_Instance.Update_user_input_2()
+	Resume_Instance.Input_2_validation_loop()
 
 # end
