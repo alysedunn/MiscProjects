@@ -1,28 +1,45 @@
 
 ALYSE NICOLE DUNN	
 
+
 PROFESSIONAL EXPERIENCE	
+
+
 MediaMath; Engineering Department; New York City, NY
+Technical Project Manager, August 2015 - Present
 Agile Project Manager; August 2013 -Present
+
 Fulfilled multiple roles (simultaneously) within MediaMath’s engineering department. Key responsibilities and results:
-Project Management: Lead front-end and back-end teams using agile methodologies. Orchestrated sprint planning meetings, retrospective meetings, daily scrums, and end of sprint demos. Used velocity and burndown charts to help measure team success.
-Incident management: Served as one of the first points of contact when the support team identified issues in production. Acted as the liaison between the support team and the engineers who debugged production issues. Assisted in writing the communications that were sent to clients about the timing and impact of production issues. Facilitated postmortem meetings, which were frequently attended by executive leadership, and followed up on action items that arose from those meetings.  
-Release management: Coordinated every aspect of every release for the entire engineering department, including branch cutting, regression testing, user acceptance testing, deployment, and post-deployment monitoring. Leveraged my knowledge of the entire stack to create detailed plans for the release of multi-faceted features that required updates to multiple servers/applications/ databases in strategic order (e.g. features that required an update to the database, the API, and the UI, in that order).
-Jira Administration: Worked directly with individuals to gather information about their Jira needs, design a custom solution for them, create that solution, test it, present it to them, and make modifications to it upon request.
+
+Project Management: Led various front-end, back-end, and full-stack teams through white boarding sessions, implementation check-ins, and various agile meetings (e.g. planning poker, sprint planning, retrospectives, etc.).
+
+Incident management: Acted as the liaison between the support team and the engineers who debugged production issues. Assisted in replicating issues seen in production, interpreting graphs to identify potential root causes for issues, and crafting communications to clients with varied levels of technical detail, tailored to the type of client(s) affected (e.g. API clients, UI clients, etc.).  
+
+Release management: Coordinated every aspect of every release for the entire engineering department, including code merging, branch cutting, regression testing, user acceptance testing, deployment, and post-deployment monitoring. Leveraged my knowledge of the entire stack to create detailed plans for the release of multi-faceted features that required updates to multiple servers/applications/databases in strategic order (e.g. features that required an update to the database, the API, and the UI, in that order).
+
+Jira Administration: Worked directly with individuals to gather information about their Jira needs, design a custom solution for them, create that solution, test it, present it to them, and make modifications to it upon request. 
 		
+
+
 Greater New York Hospital Association; New Business Initiatives Department; New York City, NY
 Manager of New Business Initiatives; Jan 2013 – August 2013
+
 Manager for the Greater New York Hospital Association’s startup mobile tech company Happtique. Key responsibilities and results:
-Executed user acceptance testing for the first version for the Happtique mobile and web apps. Created an Excel-based tracking system for defects until Happtique purchased Jira, and assisted the engineers in prioritizing the resolution of those defects.  
-Created an Access database that contained hundreds of iTunes and Android applications and ran dozens of custom SQL queries from that database each week, decreasing the amount of time needed to acquire data about the apps in the database by half.
+
+Executed UI-driven UAT for the beta for the Happtique mobile and web apps. Created an Excel-based tracking system for defects until Happtique purchased Jira, and assisted the engineers in prioritizing the resolution of those defects.  
+
+Created a relational Access database that contained hundreds of iTunes and Android applications and ran dozens of custom SQL queries from that database each week, decreasing the amount of time needed to acquire data about the apps in the database by half.
+
 	
 Huron Consulting Group; Huron Healthcare Division; New York City, NY
 Associate Revenue Cycle Consultant; Jan 2012 to Nov 2012
 Analyst Revenue Cycle Consultant; Oct 2008 to Dec 2011
-Product owner (‘Analyst’ role) and scrum master (‘Associate’ role) for remote teams of engineers. Key responsibilities and results:
-As a product owner, worked directly with clients to collect requests for bug fixes or new features, prioritized those requests for the engineering team, and performed user acceptance testing on each change before and after it was deployed to production.
-Created the database schemas that the engineers used to build the custom databases that we provided to each client. 
 
+Product owner (‘Analyst’ role) and scrum master (‘Associate’ role) for remote teams of engineers. Key responsibilities and results:
+
+As a product owner, worked directly with clients to collect requests for bug fixes or new features, prioritized those requests for the engineering team, and performed user acceptance testing on each change before and after it was deployed to production.
+
+Created the schemas for the SQL DBs that the engineers built for each client. Leveraged my technical knowledge to ensure that the correct data types were used for each column in the DB (e.g. using the 'text' vs. 'string' data type for user inputs fields with no character limit)
 
 EDUCATION
 University of Michigan, Ann Arbor, MI
@@ -31,5 +48,8 @@ Bachelor of Business Administration, May 2008
 CERTIFICATIONS
 Certified Scrum Master, CSM
 
-LANGUAGES AND TOOLS
-Python (beginner), HTML (beginner), CSS (beginner), Javascript (beginner), Ruby (beginner), JQuery, Jira, Confluence, Git, GitHub
+LANGUAGES, FRAMEWORKS, AND TOOLS
+Python (beginner), HTML (beginner), CSS (beginner), Javascript (beginner), Ruby (beginner), JQuery, Sinatra, Rails, Jira, Confluence, Git, GitHub
+
+OTHER
+Regularly create applications, and sites with dynamic web pages, in my spare time

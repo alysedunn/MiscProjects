@@ -1,4 +1,3 @@
-#!/usr/bin/ruby
 require 'rubygems'
 require 'json'
 require 'pp'
@@ -33,6 +32,7 @@ class Resume
 	end
 
 	def Resume
+		puts
 		puts "You selected the"+" "+ @user_input_1 + "resume"
 		json1 = File.read($MyResume)
 		obj = JSON.parse(json1)

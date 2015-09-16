@@ -1,4 +1,0 @@
-Walked front-end and back-end teams through white boarding sessions, implementation check-in meetings, and other technical meetings to help facilitate the timely completion of projects with as little technical debt as possible.
-University of Michigan, Ann Arbor, MI
-New York Code and Design Academy
-Python (beginner), HTML (beginner), CSS (beginner), Javascript (beginner), Ruby (beginner), JQuery, Jira, Git, GitHub

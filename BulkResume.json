@@ -1,16 +1,23 @@
 {
   "Professional_Experience": {
-    "PM": "Lead front-end and back-end teams using agile methodologies. Orchestrated sprint planning meetings, retrospective meetings, daily scrums, and end of sprint demos. Used velocity and burndown charts to help measure team success.",
-    "Dev": "Walked front-end and back-end teams through white boarding sessions, implementation check-in meetings, and other technical meetings to help facilitate the timely completion of projects with as little technical debt as possible."
+    "PM": "- Project Management: Led various front-end, back-end, and full-stack teams through white boarding sessions, implementation check-ins, and various agile meetings (e.g. planning poker, sprint planning, retrospectives, etc.).\n- Incident management: Acted as the liaison between the support team and the engineers who debugged production issues. Assisted in replicating issues seen in production, interpreting graphs to identify potential root causes for issues, and crafting communications to clients with varied levels of technical detail, tailored to the type of client(s) affected (e.g. API clients, UI clients, etc.).\n- Release management: Coordinated every aspect of every release for the entire engineering department, including code merging, branch cutting, regression testing, user acceptance testing, deployment, and post-deployment monitoring. Leveraged my knowledge of the entire stack to create detailed plans for the release of multi-faceted features that required updates to multiple servers/applications/databases in strategic order (e.g. features that required an update to the database, the API, and the UI, in that order).\n- Jira Administration: Worked directly with individuals to gather information about their Jira needs, design a custom solution for them, create that solution, test it, present it to them, and make modifications to it upon request."
 	},
 
   "Educational_Experience": {
-    "PMDev": "University of Michigan, Ann Arbor, MI",
+    "PMDev": "University of Michigan, Ann Arbor, MI\nBachelor of Business Administration, May 2008",
     "Dev": "New York Code and Design Academy"
 	},
 
   "Languages_and_Tools": {
     "Dev": "Python (beginner), HTML (beginner), CSS (beginner), Javascript (beginner), Ruby (beginner), JQuery, Jira, Git, GitHub",
     "PM": "Python, HTML, CSS, Javascript, Ruby, Jira, Confluence, Git, GitHub"
-	}
+	},
+
+    "Certifications": {
+    "PM": "Certified Scrum Master, CSM"
+  },
+
+    "Other": {
+    "PM": "Regularly create applications, and sites with dynamic web pages, in my spare time"
+  }
 }
