@@ -12,3 +12,8 @@ To use this program:
 
 2. 
 
+#Running the program
+1. Download the "BulkResume.json" and "resumeprogram.rb" files and save them in a folder on your local machine.
+2. In your terminal, navigate to the folder created in step #1 (e.g. cd into the created folder)
+3. Enter the following via your command line: <b>ruby resumeprogram.rb bulkresume.json</b>
+
