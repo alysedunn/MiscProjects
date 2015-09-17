@@ -1,15 +1,24 @@
-# The two gems below, 'rubygems' and 'json', are required in order 
-# to parse the BulkResume.json (or any JSON)file
+# The first two gems below, 'rubygems' and 'json', are required in order 
+# to parse the content in the BulkResume.json file. The third gem, 'pp',
+# is not actually required in order to run this program, but it does help 
+# ensure that all of the content prints nicely.
 require 'rubygems'
 require 'json'
-
-
 require 'pp'
 
+
+# Takes the JSON file that you referenced when you started the program 
+# and assigns that file to a global variable called "MyResume" that is 
+# later referenced at various points in the program 
 $MyResume = ARGV[0]
 
+
+# Creates a class called "Resume" that holds the various methods of 
+# the program
 class Resume 
 
+
+# 
 @@Resume_Hash = {"PM"=> {"Print_Option"=> "Project Management Resume", "File_Name"=> "Alyse Dunn_ProjectManager.txt"},
 				"Dev"=> {"Print_Option"=> "Development Resume", "File_Name"=> "Alyse Dunn_Developer.txt"}
 				}
