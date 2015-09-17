@@ -1,5 +1,9 @@
+# The two gems below, 'rubygems' and 'json', are required in order 
+# to parse the BulkResume.json (or any JSON)file
 require 'rubygems'
 require 'json'
+
+
 require 'pp'
 
 $MyResume = ARGV[0]
@@ -14,9 +18,9 @@ class Resume
 	def Print_instructions 
 		# Add loop for resume name and add readme
 		puts
-		puts "Please enter 'Dev' if you would like to see the Development resume, or 'PM' if you would like to see the PM resume:"
-		puts "PM" + " " + @@Resume_Hash['PM']["Print_Option"]
-		puts "Dev" + " " + @@Resume_Hash['Dev']["Print_Option"]
+		puts "Welcome to the Resume Builder Program!"
+		puts "Please enter 'Dev' if you would like to see the Development resume," 
+		puts "or 'PM' if you would like to see the PM resume:"
 	end
 
 	def Update_user_input_1
