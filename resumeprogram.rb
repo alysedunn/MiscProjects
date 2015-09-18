@@ -18,24 +18,34 @@ $MyResume = ARGV[0]
 class Resume 
 
 
-# 
+# Creates a class variable called "Resume_Hash" that contains a hash.
+# That has contains two keys; one for each of the two resumes that the
+# user can select and then view/print. 
 @@Resume_Hash = {"PM"=> {"Print_Option"=> "Project Management Resume", "File_Name"=> "Alyse Dunn_ProjectManager.txt"},
 				"Dev"=> {"Print_Option"=> "Development Resume", "File_Name"=> "Alyse Dunn_Developer.txt"}
 				}
 
-
+# Method just for printing instructions to the screen for the user. Note
+# that if you have different keys, you'll want to reference those keys
+# instead of mine in line 35.
 	def Print_instructions 
-		# Add loop for resume name and add readme
 		puts
 		puts "Welcome to the Resume Builder Program!"
 		puts "Please enter 'Dev' if you would like to see the Development resume," 
 		puts "or 'PM' if you would like to see the PM resume:"
 	end
 
+
+# Method to take the user's input and assign it to a class variable
+# called @user_input_1
 	def Update_user_input_1
 		@user_input_1 = STDIN.gets.chomp
 	end
 
+# Method to evaluate whether or not the user's input matches
+# the key from the Resume_Hash. If so, the program runs the
+# 'Resume' method. If not, the user is prompted to enter a 
+# valid value.
 	def Input_1_validation_loop
 		if @@Resume_Hash.has_key?(@user_input_1) 
 			Resume()
