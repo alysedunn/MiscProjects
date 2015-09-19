@@ -9,10 +9,10 @@ This "Resume Builder" program allows a user to:
 
 
 #Using the program
-1. Install Prawn by following the instructions in their ReadMe: https://github.com/prawnpdf/prawn
-2. Download the "BulkResume.json" and "resumeprogram.rb" files from this repo. None of the other files in the repo are needed for the program, but you can download the entire repo if desired (it will not negatively effect the program).
-3. Create a folder on your local machine (computer) and save the two files to that folder.
+1. Download the "BulkResume.json" and "resumeprogram.rb" files from this repo. None of the other files in the repo are needed for the program, but you can download the entire repo if desired (it will not negatively effect the program).
+2. Create a folder on your local machine (computer) and save the two files to that folder.
+3. Install Prawn to the folder that you just created by following the instructions in their ReadMe: https://github.com/prawnpdf/prawn
 4. Select the "BulkResume.json" file, and replace the existing content with your content. See the comments in the file for more detailed instructions about how to update the file with your own content.
-5. Open your terminal, and cd (i.e. use the "cd" change directory command) to navigate to the folder created in step #3.
+5. Open your terminal, and cd (i.e. use the "cd" change directory command) to navigate to the folder created in step #2.
 6. Enter the following command via your command line (note the spaces): <b>ruby resumeprogram.rb bulkresume.json</b>
 7. Follow the prompts to view, and/or print, the resume of your choice.
