@@ -1,11 +1,11 @@
 #Resume Builder!
 
 #Background
-This "Resume Builder" program allows users to:
+This "Resume Builder" program allows a user to:
 
-1. Create ONE file that contains everything that they may want to include on a resume. 
-2. Give each line item in that file a special tag, so that if you want to create multiple different resumes from the same file (e.g. one resume that highlights your front-end development experience and a different resume that highlights your back-end development experience), you can later use those tags to select a particular resume.
-3. View the resume that you selected (content is displayed in the terminal), and save it to a PDF.
+1. Create ONE file containing everything that you may want to include on a resume. 
+2. Give each line item in that file a special tag, so that if you want to create multiple different resumes from the same file (e.g. one resume that highlights your front-end development experience and a different resume that highlights your back-end development experience), you can use those tags to select a particular resume.
+3. View the resume that you selected (content is displayed in the terminal window), and save it to a PDF.
 
 
 #Using the program
