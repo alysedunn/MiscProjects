@@ -110,10 +110,12 @@ class Resume
 		end
 	end
 
-# Method to create the PDF file of the selected resume
+# Method to create the PDF file of the selected resume and output a 
+# confirmation message to the screen
 	def Create_file
 		File.new @@Resume_Hash[@user_input_1]["File_Name"],"w"
 		File.open(@@Resume_Hash[@user_input_1]["File_Name"], "w") { |file| file.write(@Resume_Just_Created) }
+		puts 
 		puts @@Resume_Hash[@user_input_1]["Print_Option"] + "just created"
 	end
 
